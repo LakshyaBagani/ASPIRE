@@ -1,14 +1,14 @@
-import React from "react";
-import Navbar from "./Navbar";
+import React from 'react'
+import Navbar from './Navbar.jsx'
+
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-black via-gray-800 to-blue-900 text-white">
-      <Navbar/>
-      
+    <div className="bg-black min-h-screen text-white">
+      <Navbar />
       
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home
