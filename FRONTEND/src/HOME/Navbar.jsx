@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [login, setLogin] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const navigate = useNavigate()
   
   useEffect(() => {
     setIsVisible(true);
@@ -29,6 +31,9 @@ function Navbar() {
     };
   }, []);
 
+  const handleLogin = ()=>{
+      navigate('/Login')
+  }
   return (
     <div className="text-white min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-purple-900 to-blue-900 overflow-hidden">
       
@@ -61,7 +66,7 @@ function Navbar() {
           <a href="#" className="hover:text-blue-400 transition-all text-xl">FAQ</a>
           <button
             className="relative bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-300 text-white font-semibold text-lg px-5 py-3 rounded-lg overflow-hidden group"
-            onClick={() => setLogin(!login)}
+            onClick={handleLogin}
             style={{ 
               transitionDelay: "400ms",
               opacity: isVisible ? 1 : 0,
