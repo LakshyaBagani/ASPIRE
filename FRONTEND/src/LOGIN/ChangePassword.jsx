@@ -40,94 +40,149 @@ function ChangePassword() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-blue-900 p-4 relative overflow-hidden">
-      <div className="absolute inset-0 bg-opacity-30 backdrop-blur-lg"></div>
-      <div className="relative bg-black/30 backdrop-blur-md shadow-2xl rounded-2xl p-8 w-96 border border-purple-500/50 transition-all duration-500 transform hover:scale-105 hover:shadow-purple-500/50 animate-fade-in">
-        <h2 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-300 to-blue-500 animate-text mb-6">
-          {isVerified ? "Reset Password" : "Forgot Password"}
-        </h2>
+    <div className="bg-gradient-to-br from-black via-[#001f1a] to-black text-white overflow-x-hidden min-h-screen min-w-full relative">
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-0 overflow-hidden">
+        <svg
+          className="absolute top-0 left-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {[...Array(12)].map((_, index) => (
+            <path
+              key={`vertical-${index}`}
+              d={`M ${(index + 1) * (100 / 13)}% 0 Q ${
+                (index + 1) * (100 / 13) + 0.5
+              }% 25%, ${(index + 1) * (100 / 13) - 0.5}% 50%, ${
+                (index + 1) * (100 / 13) + 0.5
+              }% 75%, ${(index + 1) * (100 / 13)}% 100%`}
+              stroke="rgba(0,255,170,0.15)"
+              strokeWidth="1"
+              fill="none"
+            />
+          ))}
+        </svg>
 
-        {!otpSent && (
-          <form onSubmit={handleSendOTP}>
-            <div className="mb-6">
-              <label className="block text-gray-300 text-sm font-medium mb-2">Email</label>
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-2 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-800 text-white transition duration-300 hover:border-purple-400 hover:shadow-lg"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-500 text-white font-semibold text-lg px-5 py-3 rounded-lg overflow-hidden relative shadow-lg hover:shadow-purple-500/50 transform hover:scale-105"
-            >
-              Send OTP
-            </button>
-          </form>
-        )}
+        <svg
+          className="absolute top-0 left-0 w-full h-full"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {[...Array(12)].map((_, index) => (
+            <path
+              key={`horizontal-${index}`}
+              d={`M 0 ${(index + 1) * (100 / 13)}% Q 25% ${
+                (index + 1) * (100 / 13) + 0.5
+              }%, 50% ${(index + 1) * (100 / 13) - 0.5}%, 75% ${
+                (index + 1) * (100 / 13) + 0.5
+              }%, 100% ${(index + 1) * (100 / 13)}%`}
+              stroke="rgba(0,255,170,0.15)"
+              strokeWidth="1"
+              fill="none"
+            />
+          ))}
+        </svg>
+      </div>
 
-        {otpSent && !isVerified && (
-          <form onSubmit={handleVerifyOTP} className="mt-4">
-            <div className="mb-6">
-              <label className="block text-gray-300 text-sm font-medium mb-2">Enter OTP</label>
-              <input
-                type="text"
-                placeholder="Enter OTP"
-                value={otp}
-                onChange={(e) => setOtp(e.target.value)}
-                className="w-full px-4 py-2 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-800 text-white transition duration-300 hover:border-purple-400 hover:shadow-lg"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 transition-all duration-500 text-white font-semibold text-lg px-5 py-3 rounded-lg overflow-hidden relative shadow-lg hover:shadow-purple-500/50 transform hover:scale-105"
-            >
-              Verify OTP
-            </button>
-          </form>
-        )}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-full bg-[#00ffaa] opacity-10 blur-3xl z-0"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full rounded-full bg-[#007755] opacity-15 blur-3xl z-0"></div>
 
-        {isVerified && (
-          <form onSubmit={handleResetPassword} className="mt-4">
-            <div className="mb-6">
-              <label className="block text-gray-300 text-sm font-medium mb-2">New Password</label>
-              <input
-                type="password"
-                placeholder="Enter new password"
-                value={newPassword}
-                onChange={(e) => setNewPassword(e.target.value)}
-                className="w-full px-4 py-2 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-800 text-white transition duration-300 hover:border-purple-400 hover:shadow-lg"
-                required
-              />
-            </div>
-            <div className="mb-6">
-              <label className="block text-gray-300 text-sm font-medium mb-2">Confirm Password</label>
-              <input
-                type="password"
-                placeholder="Confirm new password"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full px-4 py-2 border border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 bg-gray-800 text-white transition duration-300 hover:border-purple-400 hover:shadow-lg"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-green-500 to-teal-600 hover:from-green-600 hover:to-teal-700 transition-all duration-500 text-white font-semibold text-lg px-5 py-3 rounded-lg overflow-hidden relative shadow-lg hover:shadow-green-500/50 transform hover:scale-105"
-            >
-              Reset Password
-            </button>
-          </form>
-        )}
-
-        <div className="text-sm text-purple-400 mt-4 text-center">
-          <a href="/Login" className="hover:underline transition-all duration-300 hover:text-pink-400">
-            Back to Login
+      <header className="w-full flex justify-between items-center py-6 px-8 md:px-12 lg:px-16 bg-transparent sticky top-0 z-10">
+        <div className="flex items-center">
+          <a href="/" className="text-3xl font-bold text-[#00ffaa]">
+            Aspire
           </a>
+        </div>
+      </header>
+
+      <div className="flex items-center justify-center min-h-[80vh] relative z-1">
+        <div className="bg-gradient-to-br from-black to-[#001f1a] border border-[#00ffaa]/30 rounded-md p-8 w-96 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,170,0.3)] hover:border-[#00ffaa]/70">
+          <h2 className="text-3xl font-bold text-center text-[#00ffaa] mb-6">
+            {isVerified ? "Reset Password" : "Forgot Password"}
+          </h2>
+
+          {!otpSent && (
+            <form onSubmit={handleSendOTP}>
+              <div className="mb-6">
+                <label className="block text-white text-sm font-medium mb-2">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full px-4 py-2 border border-[#00ffaa]/30 rounded-md focus:outline-none focus:border-[#00ffaa] bg-black/50 text-white transition duration-300"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-black text-[#00ffaa] px-6 py-3 rounded-md font-bold text-lg border border-[#00ffaa] shadow-[0_0_10px_rgba(0,255,170,0.4)] hover:shadow-[0_0_15px_rgba(0,255,170,0.7)] hover:bg-black/80 transition-all"
+              >
+                Send OTP
+              </button>
+            </form>
+          )}
+
+          {otpSent && !isVerified && (
+            <form onSubmit={handleVerifyOTP} className="mt-4">
+              <div className="mb-6">
+                <label className="block text-white text-sm font-medium mb-2">Enter OTP</label>
+                <input
+                  type="text"
+                  placeholder="Enter OTP"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                  className="w-full px-4 py-2 border border-[#00ffaa]/30 rounded-md focus:outline-none focus:border-[#00ffaa] bg-black/50 text-white transition duration-300"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-black text-[#00ffaa] px-6 py-3 rounded-md font-bold text-lg border border-[#00ffaa] shadow-[0_0_10px_rgba(0,255,170,0.4)] hover:shadow-[0_0_15px_rgba(0,255,170,0.7)] hover:bg-black/80 transition-all"
+              >
+                Verify OTP
+              </button>
+            </form>
+          )}
+
+          {isVerified && (
+            <form onSubmit={handleResetPassword} className="mt-4">
+              <div className="mb-6">
+                <label className="block text-white text-sm font-medium mb-2">New Password</label>
+                <input
+                  type="password"
+                  placeholder="Enter new password"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
+                  className="w-full px-4 py-2 border border-[#00ffaa]/30 rounded-md focus:outline-none focus:border-[#00ffaa] bg-black/50 text-white transition duration-300"
+                  required
+                />
+              </div>
+              <div className="mb-6">
+                <label className="block text-white text-sm font-medium mb-2">Confirm Password</label>
+                <input
+                  type="password"
+                  placeholder="Confirm new password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  className="w-full px-4 py-2 border border-[#00ffaa]/30 rounded-md focus:outline-none focus:border-[#00ffaa] bg-black/50 text-white transition duration-300"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full bg-black text-[#00ffaa] px-6 py-3 rounded-md font-bold text-lg border border-[#00ffaa] shadow-[0_0_10px_rgba(0,255,170,0.4)] hover:shadow-[0_0_15px_rgba(0,255,170,0.7)] hover:bg-black/80 transition-all"
+              >
+                Reset Password
+              </button>
+            </form>
+          )}
+
+          <div className="text-sm text-white mt-6 text-center">
+            <a 
+              href="/Login" 
+              className="hover:text-[#00ffaa] transition-colors"
+            >
+              Back to Login
+            </a>
+          </div>
         </div>
       </div>
     </div>

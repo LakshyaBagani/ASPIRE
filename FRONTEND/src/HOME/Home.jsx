@@ -1,14 +1,12 @@
-import React from 'react'
-import Navbar from './Navbar.jsx'
-
+import React from "react";
+import LandingPage from "./LandingPage";
 
 function Home() {
   return (
-    <div className="bg-black min-h-screen text-white">
-      <Navbar />
-      
-    </div>
-  )
+    <>
+      <LandingPage/>
+    </>
+  );
 }
 
-export default Home
+export default Home;

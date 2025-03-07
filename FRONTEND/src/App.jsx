@@ -4,7 +4,6 @@ import Login from './LOGIN/Login';
 import SignUp from './LOGIN/SignUp';
 import ChangePassword from './LOGIN/ChangePassword';
 import Home from './HOME/Home';
-import AI from './HOME/AI';
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/ChangePassword" element={<ChangePassword />} />
-        <Route path="/AI" element={<AI/>} />
       </Routes>
     </BrowserRouter>
   );
