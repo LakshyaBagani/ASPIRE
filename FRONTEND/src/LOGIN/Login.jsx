@@ -39,7 +39,7 @@ function Login() {
           <h2 className="text-3xl font-bold text-center text-[#aa00ff] mb-6">
             Login
           </h2>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-6">
               <label className="block text-white text-sm font-medium mb-2">
                 Email
@@ -47,8 +47,10 @@ function Login() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 border border-[#aa00ff]/30 rounded-md focus:outline-none focus:border-[#aa00ff] bg-black/50 text-white transition duration-300"
+                value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                className="w-full px-4 py-2 border border-[#aa00ff]/30 rounded-md focus:outline-none focus:border-[#aa00ff] bg-black/50 text-white transition duration-300"
+                required
               />
             </div>
             <div className="mb-6">
@@ -58,6 +60,7 @@ function Login() {
               <input
                 type="password"
                 placeholder="Enter your password"
+                required
                 className="w-full px-4 py-2 border border-[#aa00ff]/30 rounded-md focus:outline-none focus:border-[#aa00ff] bg-black/50 text-white transition duration-300"
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -79,7 +82,6 @@ function Login() {
             <button
               type="submit"
               className="w-full bg-black text-[#aa00ff] px-6 py-3 rounded-md font-bold text-lg border border-[#aa00ff] shadow-[0_0_10px_rgba(170,0,255,0.4)] hover:shadow-[0_0_15px_rgba(170,0,255,0.7)] hover:bg-black/80 transition-all"
-              onClick={handleSubmit}
             >
               Login
             </button>

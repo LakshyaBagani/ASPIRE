@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   BookDemoIcon,
@@ -9,25 +9,26 @@ import {
 } from "./Function";
 
 function LandingPage() {
+
+  const [login , setLogin] = useState(false)
   const navigate = useNavigate();
 
   const HandleLogin = (e) => {
     navigate("/Login");
   };
 
-  const HandleStartEvent = ()=>{
+  const HandleStartEvent = () => {
     if (login) {
+      navigate("/Dashboard");
+    } else {
+      navigate("/Login");
+      setLogin(true);
       navigate('/Dashboard')
-    }else{
-      navigate('/Login')
     }
-    
-  }
+  };
 
   return (
     <div className="bg-gradient-to-br from-black via-[#1a0030] to-black text-white overflow-x-hidden min-h-screen min-w-full relative">
-      
-
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80vh] h-[80vh] rounded-full bg-[#aa00ff] opacity-10 blur-3xl z-0"></div>
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[60vh] h-[60vh] rounded-full bg-[#8a2be2] opacity-15 blur-3xl z-0"></div>
 
@@ -129,7 +130,10 @@ function LandingPage() {
                 Book a Free Demo <BookDemoIcon />
               </a>
 
-              <button onClick={HandleStartEvent} class="bg-transparent text-white px-8 py-4 rounded-md font-bold border border-white/30 flex items-center text-xl hover:border-[#aa00ff] hover:text-[#aa00ff] transition-colors">
+              <button
+                onClick={HandleStartEvent}
+                class="bg-transparent text-white px-8 py-4 rounded-md font-bold border border-white/30 flex items-center text-xl hover:border-[#aa00ff] hover:text-[#aa00ff] transition-colors"
+              >
                 Get Started
                 <BookDemoIcon />
               </button>

@@ -1,22 +1,2 @@
 @import "tailwindcss";
 
-@keyframes orbit {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  @keyframes orbitDot {
-    0% { transform: rotate(0deg) translateX(75px); }
-    100% { transform: rotate(360deg) translateX(75px); }
-  }
-  
-  @keyframes animate-text {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  .animate-text {
-    background-size: 200% auto;
-    animation: animate-text 4s linear infinite;
-  }
