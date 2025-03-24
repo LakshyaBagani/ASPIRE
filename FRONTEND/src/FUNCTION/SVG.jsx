@@ -245,4 +245,70 @@ export const ContentIcon = () => (
   </svg>
 );
 
+export const AIContentStrategySVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-16 h-16 mb-4 text-indigo-300">
+    <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="5"/>
+    <path fill="currentColor" d="M50 20v60" stroke="currentColor" strokeWidth="3"/>
+    <path fill="currentColor" d="M50 50 l20 20" stroke="currentColor" strokeWidth="3"/>
+    <circle cx="50" cy="50" r="5" fill="currentColor"/>
+    <path fill="currentColor" d="M30 70l40-40" stroke="currentColor" strokeWidth="3" opacity="0.7"/>
+  </svg>
+);
 
+export const ContentCalendarSVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-16 h-16 mb-4 text-indigo-300">
+    <rect x="15" y="20" width="70" height="60" fill="none" stroke="currentColor" strokeWidth="5"/>
+    <path fill="currentColor" d="M15 30h70v10H15z" opacity="0.7"/>
+    <rect x="25" y="45" width="10" height="10" fill="currentColor" opacity="0.5"/>
+    <rect x="40" y="45" width="10" height="10" fill="currentColor" opacity="0.5"/>
+    <rect x="55" y="45" width="10" height="10" fill="currentColor" opacity="0.5"/>
+    <rect x="70" y="45" width="10" height="10" fill="currentColor" opacity="0.5"/>
+  </svg>
+);
+
+export const VideoProductionSVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-16 h-16 mb-4 text-indigo-300">
+    <rect x="10" y="25" width="70" height="50" fill="none" stroke="currentColor" strokeWidth="5"/>
+    <polygon points="45,40 45,60 65,50" fill="currentColor" />
+    <circle cx="85" cy="40" r="5" fill="currentColor" opacity="0.7"/>
+    <circle cx="85" cy="60" r="5" fill="currentColor" opacity="0.7"/>
+  </svg>
+);
+
+export const BloggingSVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-16 h-16 mb-4 text-indigo-300">
+    <path fill="currentColor" d="M80 15H20c-2.8 0-5 2.2-5 5v60c0 2.8 2.2 5 5 5h60c2.8 0 5-2.2 5-5V20c0-2.8-2.2-5-5-5zM30 75V25h40v50H30zm50-5c0 1.1-.9 2-2 2h-3V25h3c1.1 0 2 .9 2 2v43z"/>
+    <rect x="35" y="35" width="30" height="4" fill="currentColor" opacity="0.7"/>
+    <rect x="35" y="45" width="30" height="4" fill="currentColor" opacity="0.7"/>
+    <rect x="35" y="55" width="20" height="4" fill="currentColor" opacity="0.7"/>
+  </svg>
+);
+
+export const BarGraphIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 mr-4 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <rect x="3" y="13" width="4" height="8" rx="1" ry="1" />
+    <rect x="9" y="8" width="4" height="13" rx="1" ry="1" />
+    <rect x="15" y="3" width="4" height="18" rx="1" ry="1" />
+  </svg>
+);
+
+export const TvIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 mr-4 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <rect x="2" y="7" width="20" height="15" rx="2" ry="2" transform="rotate(180 12 14.5)" />
+    <polyline points="7 2 12 7 17 2" transform="rotate(180 12 4.5)" />
+    <line x1="12" y1="22" x2="12" y2="17" />
+  </svg>
+);
+
+export const LightningIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-15 h-22 mr-4 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+  </svg>
+);
+
+export const TickCircleIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 mr-4 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <circle cx="12" cy="12" r="10" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
+  </svg>
+);

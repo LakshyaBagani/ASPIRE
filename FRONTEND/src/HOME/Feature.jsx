@@ -5,7 +5,7 @@ function Feature() {
   return (
     <Element name="Features">
         <div>
-        Feature
+        
     </div>
     </Element>
 

@@ -4,7 +4,9 @@ import { Element } from 'react-scroll';
 function Pricing() {
   return (
     <Element name='Pricing'>
-        <div>Pricing</div>
+        <div>
+          
+        </div>
     </Element>
     
   )

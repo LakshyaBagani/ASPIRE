@@ -4,7 +4,9 @@ import { Element } from 'react-scroll';
 function Contact() {
   return (
     <Element name='Contact'>
-        <div>Contact</div>
+        <div>
+          
+        </div>
     </Element>
     
   )
