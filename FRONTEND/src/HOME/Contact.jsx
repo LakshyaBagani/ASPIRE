@@ -1,13 +1,13 @@
 import React from 'react'
 import { Element } from 'react-scroll';
 
-function Pricing() {
+function Contact() {
   return (
-    <Element name='Pricing'>
-        <div>Pricing</div>
+    <Element name='Contact'>
+        <div>Contact</div>
     </Element>
     
   )
 }
 
-export default Pricing
+export default Contact
