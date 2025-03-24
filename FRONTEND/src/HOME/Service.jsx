@@ -41,8 +41,9 @@ function Service() {
 
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 drop-shadow-[0_0_8px_rgba(129,140,248,0.5)]">
-              Our Services
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-200 relative">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 drop-shadow-[0_0_8px_rgba(129,140,248,0.5)]">Services</span>
+              <span className="absolute -bottom-4 left-1/2 w-24 h-1 bg-gradient-to-r from-indigo-600 to-cyan-400 rounded-full shadow-lg shadow-indigo-500/50 -translate-x-1/2"></span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Comprehensive AI-powered marketing solutions designed to transform
@@ -59,7 +60,7 @@ function Service() {
                   ? "bg-gradient-to-r from-indigo-900/40 to-cyan-900/40"
                   : "bg-slate-900/60"
               } 
-                p-6 rounded-lg cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
+                p-6 text-center rounded-lg cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
             >
               <h3 className="text-xl font-bold text-gray-200 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-colors duration-300">
                 Ad Campaign Optimization
@@ -74,9 +75,9 @@ function Service() {
                   ? "bg-gradient-to-r from-indigo-900/40 to-cyan-900/40"
                   : "bg-slate-900/60"
               } 
-                p-6 rounded-lg cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
+                p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
             >
-              <h3 className="text-xl font-bold text-gray-200 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-colors duration-300">
+              <h3 className="text-xl mt-2 font-bold text-gray-200 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-colors duration-300">
                 AI-Driven Insights
               </h3>
               <div className="w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-cyan-500 group-hover:w-full transition-all duration-300 mt-2"></div>
@@ -89,9 +90,9 @@ function Service() {
                   ? "bg-gradient-to-r from-indigo-900/40 to-cyan-900/40"
                   : "bg-slate-900/60"
               } 
-                p-6 rounded-lg cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
+                p-6 rounded-lg text-center cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
             >
-              <h3 className="text-xl font-bold text-gray-200 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-colors duration-300">
+              <h3 className="text-xl mt-2 font-bold text-gray-200 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-colors duration-300">
                 Marketing Strategy
               </h3>
               <div className="w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-cyan-500 group-hover:w-full transition-all duration-300 mt-2"></div>
@@ -104,9 +105,9 @@ function Service() {
                   ? "bg-gradient-to-r from-indigo-900/40 to-cyan-900/40"
                   : "bg-slate-900/60"
               } 
-                p-6 rounded-lg cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
+                p-6 text-center rounded-lg cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20 border border-indigo-500/20 group`}
             >
-              <h3 className="text-xl font-bold text-gray-200 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-colors duration-300">
+              <h3 className="text-xl mt-2 font-bold text-gray-200 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-colors duration-300">
                 Content Management
               </h3>
               <div className="w-0 h-0.5 bg-gradient-to-r from-indigo-600 to-cyan-500 group-hover:w-full transition-all duration-300 mt-2"></div>
