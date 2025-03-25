@@ -1,5 +1,5 @@
 import React from "react";
-import { BookOpenIcon, LightbulbIcon, TargetIcon } from "../FUNCTION/SVG";
+import { BookOpenIcon, LightbulbIcon, LightningIcon, TargetIcon } from "../FUNCTION/SVG";
 import { Element } from 'react-scroll';
 
 function About() {
@@ -142,7 +142,7 @@ function About() {
 
             <div className="relative flex flex-col items-start mb-4">
               <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center text-cyan-400 bg-indigo-900/30 rounded-xl p-2 group-hover:text-white group-hover:bg-gradient-to-br group-hover:from-indigo-600 group-hover:to-cyan-500 transition-all duration-500 shadow-lg shadow-indigo-500/0 group-hover:shadow-indigo-500/30">
-                <LightbulbIcon className="text-4xl" />
+                <LightningIcon className="text-4xl " />
               </div>
               <h3 className="text-3xl mt-3 font-semibold group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-400 group-hover:to-cyan-400 transition-all duration-300">
                 Proven Results
