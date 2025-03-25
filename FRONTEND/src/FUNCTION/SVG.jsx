@@ -312,3 +312,238 @@ export const TickCircleIcon = () => (
     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4" />
   </svg>
 );
+
+import React from "react";
+
+export const AudienceIntelligenceIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 50 50" 
+    className="w-12 h-12 text-indigo-400"
+    fill="none"
+  >
+    <path 
+      d="M25 10 
+         C35.4 10 44 18.6 44 29 
+         C44 39.4 35.4 48 25 48 
+         C14.6 48 6 39.4 6 29 
+         C6 18.6 14.6 10 25 10 Z" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      fill="none"
+    />
+    <circle 
+      cx="25" 
+      cy="29" 
+      r="6" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      fill="none"
+    />
+    <path 
+      d="M25 23 L25 29 L30 26" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export const ContentCalendarIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 50 50" 
+    className="w-12 h-12 text-indigo-400"
+    fill="none"
+  >
+    <rect 
+      x="6" 
+      y="10" 
+      width="38" 
+      height="30" 
+      rx="4" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      fill="none"
+    />
+    <path 
+      d="M6 16 H44" 
+      stroke="currentColor" 
+      strokeWidth="3"
+    />
+    <rect 
+      x="12" 
+      y="22" 
+      width="10" 
+      height="8" 
+      rx="2" 
+      fill="currentColor" 
+      fillOpacity="0.3"
+    />
+    <rect 
+      x="28" 
+      y="22" 
+      width="10" 
+      height="8" 
+      rx="2" 
+      fill="currentColor" 
+      fillOpacity="0.3"
+    />
+    <rect 
+      x="12" 
+      y="34" 
+      width="10" 
+      height="8" 
+      rx="2" 
+      fill="currentColor" 
+      fillOpacity="0.3"
+    />
+    <rect 
+      x="28" 
+      y="34" 
+      width="10" 
+      height="8" 
+      rx="2" 
+      fill="currentColor" 
+      fillOpacity="0.3"
+    />
+  </svg>
+);
+
+export const LeadGenerationIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 50 50" 
+    className="w-12 h-12 text-indigo-400"
+    fill="none"
+  >
+    <path 
+      d="M25 10 
+         L35 20 
+         L25 30 
+         L15 20 Z" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round" 
+      strokeLinejoin="round" 
+      fill="currentColor" 
+      fillOpacity="0.2"
+    />
+    <circle 
+      cx="25" 
+      cy="20" 
+      r="4" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      fill="currentColor" 
+      fillOpacity="0.5"
+    />
+    <path 
+      d="M25 30 V40" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round"
+    />
+    <path 
+      d="M20 35 H30" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export const AIChatbotIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 50 50" 
+    className="w-12 h-12 text-indigo-400"
+    fill="none"
+  >
+    <rect 
+      x="10" 
+      y="15" 
+      width="30" 
+      height="20" 
+      rx="3" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      fill="currentColor" 
+      fillOpacity="0.1"
+    />
+    <circle 
+      cx="17" 
+      cy="25" 
+      r="3" 
+      fill="currentColor"
+    />
+    <circle 
+      cx="33" 
+      cy="25" 
+      r="3" 
+      fill="currentColor"
+    />
+    <path 
+      d="M20 30 Q25 34 30 30" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round" 
+      fill="none"
+    />
+  </svg>
+);
+
+export const SmartCampaignBuilderIcon = () => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 50 50" 
+    className="w-12 h-12 text-indigo-400"
+    fill="none"
+  >
+    <path 
+      d="M10 20 
+         C10 15.5817 13.5817 12 18 12 
+         H32 
+         C36.4183 12 40 15.5817 40 20 
+         V30 
+         C40 34.4183 36.4183 38 32 38 
+         H18 
+         C13.5817 38 10 34.4183 10 30 
+         V20 Z" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      fill="currentColor" 
+      fillOpacity="0.1"
+    />
+    <path 
+      d="M15 17 
+         L35 17" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round"
+    />
+    <path 
+      d="M15 23 
+         L25 23" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round"
+    />
+    <circle 
+      cx="35" 
+      cy="30" 
+      r="3" 
+      fill="currentColor"
+      fillOpacity="0.5"
+    />
+    <path 
+      d="M15 30 
+         L25 30" 
+      stroke="currentColor" 
+      strokeWidth="3" 
+      strokeLinecap="round"
+    />
+  </svg>
+);

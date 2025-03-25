@@ -19,7 +19,7 @@ function MarketingStrategy() {
   );
 
   return (
-    <div className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-8 rounded-xl border border-indigo-500/30 shadow-lg shadow-indigo-500/10">
+    <div className="mb-15 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-8 rounded-xl border border-indigo-500/30 shadow-lg shadow-indigo-500/10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 relative overflow-hidden">
         {/* Background blur effect */}
         <div className="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-indigo-600 opacity-10 blur-3xl"></div>

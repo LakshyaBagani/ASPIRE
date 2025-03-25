@@ -4,9 +4,9 @@ import Service from "./HOME/Service";
 import About from "./HOME/About";
 import Navbar from "./HOME/Navbar";
 import { Element } from "react-scroll";
-import Feature from "./HOME/Feature";
 import Pricing from "./HOME/Pricing";
 import Contact from "./HOME/Contact";
+import Feature from "./HOME/Feature";
 
 function Home() {
   return (
