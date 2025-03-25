@@ -7,6 +7,7 @@ import { Element } from "react-scroll";
 import Pricing from "./COMPONENT/Pricing";
 import Contact from "./COMPONENT/Contact";
 import Feature from "./COMPONENT/Feature";
+import Footer from "./COMPONENT/Footer";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
         <Feature/>
         <Pricing/>
         <Contact/>
+        <Footer/>
       </div>
     </Element>
   );

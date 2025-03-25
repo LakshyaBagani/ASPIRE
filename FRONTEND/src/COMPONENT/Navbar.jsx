@@ -69,7 +69,7 @@ function Navbar() {
                   to="Services"
                   smooth={true}
                   duration={500}
-                  offset={-70}
+                  offset={-120}
                   spy={true}
                 >
                   <a

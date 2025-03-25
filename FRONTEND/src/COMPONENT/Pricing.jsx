@@ -14,6 +14,23 @@ function Pricing() {
   return (
     <Element name="Pricing">
       <div className="w-full text-white overflow-x-hidden min-h-screen relative bg-gradient-to-b from-slate-950 via-blue-950 to-slate-950 py-16">
+        {/* Background effects */}
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+          <div className="absolute top-20 -left-20 w-96 h-96 rounded-full bg-indigo-600 opacity-20 blur-3xl"></div>
+          <div className="absolute bottom-40 -right-20 w-96 h-96 rounded-full bg-cyan-500 opacity-20 blur-3xl"></div>
+          <div className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full bg-violet-600 opacity-20 blur-3xl"></div>
+          <div className="absolute bottom-1/3 right-1/3 w-80 h-80 rounded-full bg-blue-500 opacity-10 blur-3xl"></div>
+        </div>
+
+        {/* Animated dots */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-40 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
+          <div className="absolute top-60 left-20 w-2 h-2 bg-indigo-500 rounded-full animate-pulse delay-150"></div>
+          <div className="absolute top-80 right-40 w-2 h-2 bg-violet-500 rounded-full animate-pulse delay-300"></div>
+          <div className="absolute bottom-40 right-80 w-2 h-2 bg-blue-500 rounded-full animate-pulse delay-500"></div>
+          <div className="absolute bottom-20 left-60 w-2 h-2 bg-cyan-400 rounded-full animate-pulse delay-700"></div>
+        </div>
+
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-visible">
             {" "}

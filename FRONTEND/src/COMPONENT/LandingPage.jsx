@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 import {
   BookDemoIcon,
   AdCampaignIcon,
@@ -66,21 +67,27 @@ function LandingPage() {
               </p>
 
               <div className="flex gap-8 mb-24 flex-wrap justify-center">
-                <a
-                  href="#"
-                  className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 overflow-hidden z-10"
+                <Link
+                  to="Contact"
+                  smooth={true}
+                  duration={500}
+                  offset={-120}
+                  spy={true}
                 >
-                  <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-600 to-cyan-500 shadow-xl transform scale-100 group-hover:scale-105 transition-all duration-500 ease-in-out rounded-md"></span>
-                  <span className="absolute bottom-0 right-0 w-8 h-8 bg-white/20 rounded-full -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all"></span>
-                  <span className="absolute top-0 left-0 w-8 h-8 bg-white/20 rounded-full translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all"></span>
-                  <span className="relative flex items-center text-xl">
-                    Book a Free Demo
-                    <span className="ml-2">
-                      <BookDemoIcon />
+                  <a
+                    className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 overflow-hidden z-10"
+                  >
+                    <span className="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-600 to-cyan-500 shadow-xl transform scale-100 group-hover:scale-105 transition-all duration-500 ease-in-out rounded-md"></span>
+                    <span className="absolute bottom-0 right-0 w-8 h-8 bg-white/20 rounded-full -translate-x-1 -translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all"></span>
+                    <span className="absolute top-0 left-0 w-8 h-8 bg-white/20 rounded-full translate-x-1 translate-y-1 group-hover:translate-x-0 group-hover:translate-y-0 transition-all"></span>
+                    <span className="relative flex items-center text-xl">
+                      Book a Free Demo
+                      <span className="ml-2">
+                        <BookDemoIcon />
+                      </span>
                     </span>
-                  </span>
-                </a>
-
+                  </a>
+                </Link>
                 <button
                   onClick={HandleStartEvent}
                   className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 overflow-hidden"
