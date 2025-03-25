@@ -1,12 +1,12 @@
 import React from "react";
-import LandingPage from "./HOME/LandingPage";
-import Service from "./HOME/Service";
-import About from "./HOME/About";
-import Navbar from "./HOME/Navbar";
+import LandingPage from "./COMPONENT/LandingPage";
+import Service from "./COMPONENT/Service";
+import About from "./COMPONENT/About";
+import Navbar from "./COMPONENT/Navbar";
 import { Element } from "react-scroll";
-import Pricing from "./HOME/Pricing";
-import Contact from "./HOME/Contact";
-import Feature from "./HOME/Feature";
+import Pricing from "./COMPONENT/Pricing";
+import Contact from "./COMPONENT/Contact";
+import Feature from "./COMPONENT/Feature";
 
 function Home() {
   return (
