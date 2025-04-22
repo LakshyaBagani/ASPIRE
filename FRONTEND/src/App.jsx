@@ -4,7 +4,8 @@ import Login from "./LOGIN/Login";
 import SignUp from "./LOGIN/SignUp";
 import ChangePassword from "./LOGIN/ChangePassword";
 import Home from "./Home";
-import Dashboard from "./DASHBOARD/Dashboard";
+import ChooseAi from "./DASHBOARD/ChooseAi";
+import MarketingStrategies from "./DASHBOARD/MARKETING/MarketingStrategies";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/ChangePassword" element={<ChangePassword />} />
-        <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/ChoosePath" element={<ChooseAi />} />
+        <Route path="/Dashboard" element={<MarketingStrategies/>} />
       </Routes>
     </BrowserRouter>
   );

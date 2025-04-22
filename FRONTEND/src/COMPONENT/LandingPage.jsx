@@ -15,11 +15,11 @@ function LandingPage() {
 
   const HandleStartEvent = () => {
     if (login) {
-      navigate("/Dashboard");
+      navigate("/ChoosePath");
     } else {
       navigate("/Login");
       setLogin(true);
-      navigate("/Dashboard");
+      navigate("/ChoosePath");
     }
   };
 
