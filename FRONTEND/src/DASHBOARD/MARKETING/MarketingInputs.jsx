@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-function MarketingInputs() {
+function MarketingInputs({name, setName, setAIText}) {
 
-    const [name, setName] = useState('');
+    
     const [industry, setIndustry] = useState('');
     const [goal, setGoal] = useState('');
     const [challenge, setChallenge] = useState('');
