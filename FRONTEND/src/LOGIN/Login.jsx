@@ -1,14 +1,36 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    navigate('/');
+    console.log("Hello from 1")
+    try {
+      console.log("Hello from 2")
+      const response = await axios.get("http://0.0.0.0:8000/docs#/Authentication/login_auth_login_post" , {
+        email,password
+      })
+      console.log("Hello from 3")
+      if(response.status == 200){
+        console.log("Hello from 4")
+        navigate('/');
+        console.log("Hello from 5")
+        alert("Login successfully")
+        console.log("Hello from 6")
+        console.log("Register done");
+      }else{
+        console.log("Hello from 7")
+        console.log("NOT Register");
+      }
+    } catch (error) {
+      console.log("Hello from 8")
+      console.log("Error" , error);
+    }
   };
 
   const Signup = (e) => {
@@ -29,14 +51,7 @@ function Login() {
         <div className="absolute bottom-1/3 -right-20 w-96 h-96 rounded-full bg-cyan-500 opacity-20 blur-3xl"></div>
         <div className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full bg-violet-600 opacity-20 blur-3xl"></div>
       </div>
-      
-      {/* Animated dots */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-40 w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></div>
-        <div className="absolute top-60 left-20 w-2 h-2 bg-indigo-500 rounded-full animate-pulse delay-150"></div>
-        <div className="absolute top-80 right-40 w-2 h-2 bg-violet-500 rounded-full animate-pulse delay-300"></div>
-        <div className="absolute bottom-40 right-80 w-2 h-2 bg-blue-500 rounded-full animate-pulse delay-500"></div>
-      </div>
+     
 
       <header className="w-full flex justify-between items-center py-6 px-8 md:px-12 lg:px-16 bg-transparent sticky top-0 z-10">
         <div className="flex items-center">

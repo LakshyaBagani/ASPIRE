@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function SignUp() {
   const [name, setName] = useState("");
@@ -9,13 +10,24 @@ function SignUp() {
 
   const navigate = useNavigate();
 
-  const handleSignUp = (e) => {
+  const handleSignUp = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
       alert("Passwords do not match!");
       return;
     }
-    alert("Sign-up successful!");
+    try {
+      const response = await axios.post("http://0.0.0.0:8000/docs#/Authentication/register_auth_register_post" , {
+        email,password
+      })
+      if(response.status == 200){
+        navigate('/');
+        alert("Sign Up successfully")
+      }
+    } catch (error) {
+      console.log("Error" , error);
+      
+    }
   };
 
   return (
